@@ -1,9 +1,9 @@
 import { useMemo, useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./NavBar.css";
+import styles from "./NavBar.module.css";
 
 function navClassName({ isActive }) {
-  return `${isActive ? "nav-link-active" : "hover:bg-slate-100 dark:hover:bg-slate-800"} rounded-md px-3 py-2`;
+  return `${isActive ? styles.navLinkActive : "hover:bg-slate-100 dark:hover:bg-slate-800"} rounded-md px-3 py-2`;
 }
 
 export default function NavBar() {

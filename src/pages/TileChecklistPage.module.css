@@ -1,4 +1,4 @@
-.checklist-item-label {
+.itemLabel {
   display: flex;
   cursor: pointer;
   align-items: flex-start;
@@ -7,18 +7,18 @@
   padding: 0.5rem;
 }
 
-.checklist-item-checkbox {
+.itemCheckbox {
   margin-top: 0.25rem;
   height: 1rem;
   width: 1rem;
   border-radius: 0.25rem;
 }
 
-.checklist-item-text {
+.itemText {
   font-size: 0.875rem;
 }
 
-.checklist-item-checkbox:checked + .checklist-item-text {
+.itemCheckbox:checked + .itemText {
   text-decoration: line-through;
   opacity: 0.7;
 }
