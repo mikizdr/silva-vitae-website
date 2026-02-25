@@ -1,3 +1,5 @@
+import "./TileChecklistPage.css";
+
 const checklistSections = [
   {
     title: "1. Припрема подлоге",
@@ -52,14 +54,9 @@ function ChecklistCard({ title, items }) {
       <ul className="space-y-3">
         {items.map((item) => (
           <li key={item}>
-            <label className="group flex cursor-pointer items-start gap-3 rounded-lg p-2 hover:bg-slate-50 dark:hover:bg-slate-800">
-              <input
-                type="checkbox"
-                className="peer mt-1 h-4 w-4 rounded border-slate-300 text-emerald-600 focus:ring-emerald-500 dark:border-slate-600 dark:bg-slate-800 dark:checked:bg-emerald-500"
-              />
-              <span className="text-sm text-slate-700 peer-checked:text-slate-400 peer-checked:line-through dark:text-slate-200 dark:peer-checked:text-slate-500">
-                {item}
-              </span>
+            <label className="checklist-item-label hover:bg-slate-50 dark:hover:bg-slate-800">
+              <input type="checkbox" className="checklist-item-checkbox border-slate-300 text-emerald-600 focus:ring-emerald-500 dark:border-slate-600 dark:bg-slate-800 dark:checked:bg-emerald-500" />
+              <span className="checklist-item-text text-slate-700 dark:text-slate-200">{item}</span>
             </label>
           </li>
         ))}

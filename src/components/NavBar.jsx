@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 function navClassName({ isActive }) {
   return `${isActive ? "nav-link-active" : "hover:bg-slate-100 dark:hover:bg-slate-800"} rounded-md px-3 py-2`;
