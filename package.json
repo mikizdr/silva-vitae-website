@@ -8,8 +8,8 @@
     "build": "vite build",
     "typecheck": "tsc -b",
     "preview": "vite preview",
-    "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
-    "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\""
+    "lint": "pnpm exec eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+    "format": "pnpm exec prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\""
   },
   "dependencies": {
     "react": "^18.3.1",
