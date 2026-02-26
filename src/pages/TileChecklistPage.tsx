@@ -1,16 +1,6 @@
+import { ChecklistCardProps, ChecklistSection, CommonMistake } from "../types/titleChecklist";
 import styles from "./TileChecklistPage.module.css";
 
-interface ChecklistSection {
-  title: string;
-  items: string[];
-}
-
-type CommonMistake = [mistake: string, consequence: string, avoid: string];
-
-interface ChecklistCardProps {
-  title: string;
-  items: string[];
-}
 
 const checklistSections: ChecklistSection[] = [
   {
