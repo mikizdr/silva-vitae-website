@@ -1,0 +1,8 @@
+node_modules
+dist
+build
+out-tsc
+coverage
+*.min.js
+*.min.css
+public

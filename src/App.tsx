@@ -1,12 +1,13 @@
-import { Navigate, Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout";
-import AboutPage from "./pages/AboutPage";
-import ContactPage from "./pages/ContactPage";
-import DocsGettingStartedPage from "./pages/DocsGettingStartedPage";
-import DocsIndexPage from "./pages/DocsIndexPage";
-import DocsPage2Page from "./pages/DocsPage2Page";
-import HomePage from "./pages/HomePage";
-import TileChecklistPage from "./pages/TileChecklistPage";
+import { Navigate, Route, Routes } from 'react-router-dom';
+
+import Layout from './components/Layout';
+import AboutPage from './pages/AboutPage';
+import ContactPage from './pages/ContactPage';
+import DocsGettingStartedPage from './pages/DocsGettingStartedPage';
+import DocsIndexPage from './pages/DocsIndexPage';
+import DocsPage2Page from './pages/DocsPage2Page';
+import HomePage from './pages/HomePage';
+import TileChecklistPage from './pages/TileChecklistPage';
 
 export default function App() {
   return (

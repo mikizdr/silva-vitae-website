@@ -1,25 +1,27 @@
-import { useMemo, useState } from "react";
-import { NavLink } from "react-router-dom";
-import styles from "./NavBar.module.css";
+import { useMemo, useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import styles from './NavBar.module.css';
 
 function navClassName({ isActive }: { isActive: boolean }) {
-  return `${isActive ? styles.navLinkActive : "hover:bg-slate-100 dark:hover:bg-slate-800"} rounded-md px-3 py-2`;
+  return `${isActive ? styles.navLinkActive : 'hover:bg-slate-100 dark:hover:bg-slate-800'} rounded-md px-3 py-2`;
 }
 
 export default function NavBar() {
-  const [isDark, setIsDark] = useState(document.documentElement.classList.contains("dark"));
+  const [isDark, setIsDark] = useState(document.documentElement.classList.contains('dark'));
 
   const themeLabel = useMemo(() => {
-    return isDark ? "☀️ Svetli režim" : "🌙 Tamni režim";
+    return isDark ? '☀️ Light mode' : '🌙 Dark mode';
   }, [isDark]);
 
   const toggleTheme = () => {
     const root = document.documentElement;
-    const darkEnabled = root.classList.toggle("dark");
+    const darkEnabled = root.classList.toggle('dark');
     setIsDark(darkEnabled);
     try {
-      localStorage.setItem("theme", darkEnabled ? "dark" : "light");
-    } catch (error) {}
+      localStorage.setItem('theme', darkEnabled ? 'dark' : 'light');
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -40,7 +42,11 @@ export default function NavBar() {
         <NavLink to="/docs" className={navClassName}>
           Docs
         </NavLink>
-        <button type="button" onClick={toggleTheme} className="ml-2 rounded-md border border-slate-300 px-3 py-2 dark:border-slate-700">
+        <button
+          type="button"
+          onClick={toggleTheme}
+          className="ml-2 rounded-md border border-slate-300 px-3 py-2 dark:border-slate-700"
+        >
           <span>{themeLabel}</span>
         </button>
       </div>
