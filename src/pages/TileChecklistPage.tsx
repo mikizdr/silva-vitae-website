@@ -1,6 +1,18 @@
 import styles from "./TileChecklistPage.module.css";
 
-const checklistSections = [
+interface ChecklistSection {
+  title: string;
+  items: string[];
+}
+
+type CommonMistake = [mistake: string, consequence: string, avoid: string];
+
+interface ChecklistCardProps {
+  title: string;
+  items: string[];
+}
+
+const checklistSections: ChecklistSection[] = [
   {
     title: "1. Припрема подлоге",
     items: [
@@ -38,7 +50,7 @@ const checklistSections = [
   }
 ];
 
-const commonMistakes = [
+const commonMistakes: CommonMistake[] = [
   ["Прескакање хидроизолације", "Влага улази у зид, оштећења", "Увек нанети хидроизолацију у купатилу"],
   ["Неравна подлога", "Криве плочице, лош изглед", "Изравнати зид/под пре лепљења"],
   ["Превише лепка", "Плочице клизе, неравни редови", "Нанети танак, равномерни слој"],
@@ -47,7 +59,7 @@ const commonMistakes = [
   ["Лоша вентилација", "Дуго сушење, појава буђи", "Обезбедити проветравање током и после радова"]
 ];
 
-function ChecklistCard({ title, items }) {
+function ChecklistCard({ title, items }: ChecklistCardProps) {
   return (
     <article className="rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800">
       <h2 className="mb-4 text-lg font-semibold text-slate-900 dark:text-slate-100">{title}</h2>

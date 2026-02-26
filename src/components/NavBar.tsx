@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./NavBar.module.css";
 
-function navClassName({ isActive }) {
+function navClassName({ isActive }: { isActive: boolean }) {
   return `${isActive ? styles.navLinkActive : "hover:bg-slate-100 dark:hover:bg-slate-800"} rounded-md px-3 py-2`;
 }
 
