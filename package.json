@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "lint": "pnpm exec eslint \"src/**/*.{js,jsx,ts,tsx}\"",
     "format": "pnpm exec prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\"",
+    "format:check": "pnpm exec prettier --check \"src/**/*.{js,jsx,ts,tsx,css,md}\"",
     "prepare": "husky install"
   },
   "dependencies": {
