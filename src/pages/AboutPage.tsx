@@ -2,7 +2,7 @@ export default function AboutPage() {
   return (
     <section className="rounded-2xl bg-white p-8 shadow-sm ring-1 ring-slate-200 dark:bg-slate-900 dark:ring-slate-800 flex flex-col items-center">
       <img
-        src="/images/silva-vitae-logo.png"
+        src="/images/silva-vitae-logo.webp"
         alt="Silva Vitae Logo"
         className="w-32 h-32 mb-6"
         style={{ filter: 'drop-shadow(0 2px 8px rgba(0,0,0,0.15))' }}
