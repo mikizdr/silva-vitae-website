@@ -1,32 +1,34 @@
 ## GitHub Pages (Vite + React)
 
+[![CodeQL](https://github.com/mikizdr/silva-vitae-website/actions/workflows/codeql.yml/badge.svg)](https://github.com/mikizdr/silva-vitae-website/actions/workflows/codeql.yml)
+
 This repository uses a React app powered by Vite and is deployed to GitHub Pages via GitHub Actions.
 
 ### Local development
 
 1. Install dependencies:
 
-	```bash
-	npm install
-	```
+   ```bash
+   pnpm install
+   ```
 
 2. Start dev server:
 
-	```bash
-	npm run dev
-	```
+   ```bash
+   pnpm run dev
+   ```
 
 3. Build for production:
 
-	```bash
-	npm run build
-	```
+   ```bash
+   pnpm run build
+   ```
 
 4. Preview production build:
 
-	```bash
-	npm run preview
-	```
+   ```bash
+   pnpm run preview
+   ```
 
 ### App structure
 
