@@ -1,6 +1,7 @@
 ## GitHub Pages (Vite + React)
 
 [![CodeQL](https://github.com/mikizdr/silva-vitae-website/actions/workflows/codeql.yml/badge.svg)](https://github.com/mikizdr/silva-vitae-website/actions/workflows/codeql.yml)
+[![Deploy Vite site to GitHub Pages](https://github.com/mikizdr/silva-vitae-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/mikizdr/silva-vitae-website/actions/workflows/deploy.yml)
 
 This repository uses a React app powered by Vite and is deployed to GitHub Pages via GitHub Actions.
 
